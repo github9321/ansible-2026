@@ -1,0 +1,32 @@
+1  cd .ssh
+    2  ls
+    3  ssh_keygen
+    4  ssh-keygen
+    5  cat id_rsa
+    6  cat id_rsa.pub
+    7  ls
+    8  ssh -i id_rsa ec2-user@10.0.0.22
+    9  cd ..
+   10  ls
+   11  mkdir ansible
+   12  ls
+   13  cd ansible
+   14  ls
+   15  ssh -i id_rsa ec2-user@10.0.0.22
+   16  vi all_vm
+   17  vi project01
+   18  vi project02
+   19  cat  all_vm
+   20  ls
+   21  sudo yum update -y
+   22  sudo yum install ansible -y
+   23  ansible --version
+   24  ansible all -i hosts -m shell -a "free -m"
+   25  ansible all -i all_vm -m shell -a "free -m"
+   26  ansible all -i project01  -m shell -a "free -m"
+   27  ansible all -i project02  -m shell -a "free -m"
+   28  ansible all -i all_vm -m shell -a "free -m"
+   29* ansible all -i all_vm -m shell -"
+   30  ansible all -i project01  -m shell -a "sudo yum install ansible -y"
+   31  ansible all -i project02  -m shell -a "sudo yum install ansible -y"
+   32  history
