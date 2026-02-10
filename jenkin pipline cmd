@@ -1,0 +1,58 @@
+    1  sudo su
+    2  cd .ssh
+    3  ls
+    4  ssh-keygen
+    5  cat id_rsa.pub
+    6  ls
+    7  cd ..
+    8  sudo yum install ansible -y
+    9  ls
+   10  mkdir ansible
+   11  ls
+   12  cd ansible
+   13  cat all_vim
+   14  vi all_vim
+   15  vi httpd.yml
+   16  ansible-playbook -i all_vim httpd.yml
+   17  ls
+   18  ssh ec2-user@10.0.0.22
+   19  cat /home/ec2-user/all_vm
+   20  ls
+   21  cat all_vim
+   22  ls -l /home/ec2-user/all_vm
+   23  pwd
+   24  cd ..
+   25  pwd
+   26  ls
+   27  vim all_vim
+   28  ls
+   29  cat /home/ec2-user/all_vm
+   30  sudo cat /home/ec2-user/all_vm
+   31  cat all_vm
+   32  history
+
+agent server
+1  sudo su
+    2  cd .ssh
+    3  ls
+    4  cat authorized_keys
+    5  vi authorized_keys
+    6  cd ..
+    7  sudo yum install java-17 -y
+    8  sudo yum install git -y
+    9  sudo yum install ansible -y
+   10  git pull
+   11  sudo yum install git -y
+   12  git clone https://github.com/github9321/ansible-2026.git
+   13  git pull
+   14  ls
+   15  cd ansible-2026
+   16  git pull
+   17  ssh ec2-user@10.0.0.22
+   18  sudo ssh ec2-user@10.0.0.22
+   19  sudo ssh -i id_rsa ec2-user@10.0.0.22
+   20  ssh ec2-user@10.0.0.22
+   21  cd ..
+   22  ansible all -i all_vm -m ping
+   23  history
+
